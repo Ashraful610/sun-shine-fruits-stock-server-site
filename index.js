@@ -7,10 +7,6 @@ const cors = require('cors');
 app.use(express.json());
 app.use(cors());
 
-//  user name ashrafulAlam
-// password MqGUhF1cXTl2qfj4
-
-
 
 const { MongoClient, ServerApiVersion ,ObjectId} = require('mongodb');
 const uri = "mongodb+srv://ashrafulAlam:MqGUhF1cXTl2qfj4@cluster0.sia2vfl.mongodb.net/?retryWrites=true&w=majority";
