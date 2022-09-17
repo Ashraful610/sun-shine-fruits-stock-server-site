@@ -1,0 +1,162 @@
+[
+    {
+        "name":"Jackfruit",
+        "price":100,
+        "description":"The jackfruit grows on a jack tree. A species of tree in a fig, mulber…",
+        "quantity":20,
+        "img":"https://i.ibb.co/V9ZW6LT/Jackfruit.jpg",
+        "suplier":"Mahbub"
+    },
+   {
+    "name":"Mango",
+    "price":8,
+    "description":":The mango is an edible fruit rich in vitamins(A, C &D), and the taste …",
+    "quantity":80,
+    "img":"https://i.ibb.co/jgVm7zY/mango.jpg",
+    "suplier":"Riyad Ahmed"
+   },
+   {
+    "name":"Grapes",
+    "price":80,
+    "description":"Grape is a berry-type fruit that is used to make wines and is grown on…",
+    "quantity":100,
+    "img":"https://i.ibb.co/VvP0NzP/grapes.jpg",
+    "suplier":"Ashraful Alam"
+   },
+  {
+    "name":"Papaya",
+    "price":40,
+    "description":"Papaya is from the family Caricaceae. Its scientific is Caric,a pa…",
+    "quantity":80,
+    "img":"https://i.ibb.co/:9RGdCm/Papaya.jpg",
+    "suplier":"Sobuj Ahmed"
+  },
+  {
+    "name":"Watermelon",
+    "price":150,
+    "description":"Watermelon is a watery fruit that grows in the vine-like shrub floweri…",
+    "quantity":20,
+    "img":"https://i.ibb.co/JQ46SQZ/Watermelon.,jpg",
+    "suplier":"Akib"
+  },
+  {
+    "name":"Dragonfruit",
+    "price":70,
+    "description":"The dragon fruit is a fruit having less sugar content, lower in calori…",
+    "quantity":50,
+    "img":"https://i.ibb.co/51DsrYH/Dragonfruit,.jpg",
+    "suplier":"Sani"
+  },
+  {
+    "name":"Strawberry",
+    "price":60,
+    "description":"The strawberry is a type of berry fruit, which is a hybrid species of …",
+    "quantity":300,
+    "img":"https://i.ibb.co/V3Yf4V6/Strawberry.jpg",
+    "suplier":"Sabbir Ahmed"
+  },
+  {
+    "name":"Blueberry",
+    "price":50,
+    "description":"Blueberries are produced from flowering plants that look like blue or …",
+    "quantity":50,
+    "img":"https://i.ibb.co/9GFCts1/Blueberry.jpg",
+    "suplier":"Asif Ahmed"
+  },
+  {
+    "name":"Gooseberry",
+    "price":55,
+    "description":"Gooseberry is a fruit that has a common name for the species of Ribes.…",
+    "quantity":50,
+    "img":"https://i.ibb.c/GvrXLb7/Gooseberry.jpg",
+    "suplier":"Nirob Ahmed"
+  },
+  {
+    "name":"Cherry",
+    "price":120,
+    "description":"Cherry is a fruit of genus prunus, is a fleshy drupe. The sweet cherry…",
+    "quantity":50,
+    "img":"https://i.ibb.co/sjjQnP5/Cherry.jpg",
+    "suplier":"Rejaul Karim"
+  },
+  {
+    "name":"Custard Apple",
+    "price":40,
+    "description":"The Custard Apple is a common name for the ,fruit which bears this frui…",
+    "quantity":50,
+    "img":"https://i.ibb.c:/djCcR3f/Custard-Apple.jpg",
+    "suplier":"Rubel Ahmed"
+   },
+   {
+    "name":"Lime",
+    "price":20,
+    "description":"Lime is a fruit, also known as lemon, a citrus fruit that contains cit…",
+    "quantity":160,
+    "img":"https://i.ibb.co/rttYskK/Lime.jpg",
+    "suplier":"Tanvir"
+   },
+   {
+    "name":"Peach",
+    "price":30,
+    "description":"Peach is a fruit produced in a deciduous, its scientific name is Prunu…",
+    "quantity":500,
+    "img":"https://i.ibb.co/SfgX2RS/Peach.jpg",
+    "suplier":"Kawser Ahmed"
+   },
+   {
+    "name":"Guava",
+     "price":5,
+     "description":"Guava is a fleshy fruit containing seeds inside it, which have vitamin…",
+     "quantity":200,
+     "img":"https://i.ibb.co/dp1yRWt/Guava.jpg",
+    "suplier":"Nahidid"
+   },
+   {
+    "name":"Pomegranate",
+    "price":100,
+    "description":"Pomegranate is a seed-bearing fruit that grows in the flowering plant …",
+    "quantity":500,
+    "img":"https://i.ibb.co/VwGbm14/anner.jpg",
+    "suplier":"Imam Hossin"
+   },
+   {
+    "name":"Coconut",
+    "price":30,
+    "description":"The coconut is a juicy fruit full of water in it called coconut water…",
+    "quantity":20,
+    "img":"https://i.ibb.co/3TB898s/Coconut.jpg",
+    "suplier":"Rashdul Dip"
+    },
+    {
+    "name":"Apricot",
+    "price":30,
+    "description":"An apricot is a stone fruit from the family Rosaceae having the scient…",
+    "quantity":9,
+    "img":"https://i.ibb.co/dknXVXc/Apricot.jpg",
+    "suplier":"Rahim"
+    },
+    {
+    "name":"Pear",
+    "price":80,
+    "description":"Peartree produces pears from the species of genus Pyrus, from the fami…",
+    "quantity":10,
+    "img":"https://i.ibb.co/93VRTkc/Pear.jpg",
+    "suplier":"Hero Alam"
+    },
+    {
+    "name":"Orange",
+    "price":60,
+    "description":"Oranges are citrus fruit from the family Rutaceae. It is also called s…",
+    "quantity":10,
+    "img":"https://i.ibb.co/cyQhg5J/orange.jpg",
+    "suplier":"Remon Ahmed"
+    },
+    {
+    "name":"Banana",
+    "price":40,
+    "description":"A banana is a fleshy and edible fruit that does not contain any seeds.…",
+    "quantity":12,
+    "img":"https://i.ibb.co/16wQ9Rj/banana.jpg",
+    "suplier":"Shrif Hassan"
+    }
+]
