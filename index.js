@@ -1,15 +1,16 @@
 const express = require('express');
 const app = express();
+const { MongoClient, ServerApiVersion ,ObjectId} = require('mongodb');
 const port = process.env.PORT || 4000;
 const cors = require('cors');
 
+require('dotenv').config()
 // middleware
 app.use(express.json());
 app.use(cors());
 
 
-const { MongoClient, ServerApiVersion ,ObjectId} = require('mongodb');
-const uri = "mongodb+srv://ashrafulAlam:MqGUhF1cXTl2qfj4@cluster0.sia2vfl.mongodb.net/?retryWrites=true&w=majority";
+const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.sia2vfl.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
 async function run (){
@@ -18,15 +19,22 @@ async function run (){
         const fruitsCollection = client.db('fruits').collection('fruit');
         console.log('connecting to db fruits');
 
-        //  get api
+        //  get all api
         app.get('/fruits',async(req, res) => {
             const query = req.query
             const cursor = fruitsCollection.find(query)
             const result = await cursor.toArray()
-            console.log(result)
             res.send(result)
          }
         )
+        // get one api
+        app.get('/fruit/:id', async (req, res) => {
+            const id = req.params.id
+            const query = {_id:ObjectId(id)}
+            const result = await fruitsCollection.findOne(query)
+            res.send(result)
+        })
+
         // create/post api
          app.post('/fruit', async(req, res) => {
             const data = req.body
@@ -42,6 +50,7 @@ async function run (){
             const options = { upsert: true };
             const updateDoc = { $set: {...data} };
             const result = await fruitsCollection.updateOne(filter, updateDoc, options);
+            console.log(result)
             res.send(result);
         })
 
@@ -50,7 +59,6 @@ async function run (){
             const fruitId = req.params.id
             const filter = {_id:ObjectId(fruitId)}
             const result = await fruitsCollection.deleteOne(filter) 
-            console.log(result)
             res.send(result)
         })
     }
