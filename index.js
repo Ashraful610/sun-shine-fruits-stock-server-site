@@ -17,9 +17,10 @@ async function run (){
     try{
         await client.connect();
         const fruitsCollection = client.db('fruits').collection('fruit');
+        const soldFruitsCollection = client.db('soldFruits').collection('soldFruit');
         console.log('connecting to db fruits');
 
-        //  get all api
+        // get all fruits for 
         app.get('/fruits',async(req, res) => {
             const query = req.query
             const cursor = fruitsCollection.find(query)
@@ -27,7 +28,7 @@ async function run (){
             res.send(result)
          }
         )
-        // get one api
+        // get one fruit for item details page
         app.get('/fruit/:id', async (req, res) => {
             const id = req.params.id
             const query = {_id:ObjectId(id)}
@@ -35,14 +36,28 @@ async function run (){
             res.send(result)
         })
 
-        // create/post api
+        // user buy fruits for my order page 
+        app.get('/soldFruits/:email', async (req, res) => {
+            const email = req.params.email
+            const result = await soldFruitsCollection.find({userEmail:email}).toArray()
+            res.send(result)
+        })
+         
+        // insert one fruit for add item page
          app.post('/fruit', async(req, res) => {
             const data = req.body
             const result = await fruitsCollection.insertOne(data)
             res.send(result)
         })
 
-        // update api
+        // user sold fruit post for buy now page 
+         app.post('/sold', async(req, res) => {
+            const data = req.body
+            const result = await soldFruitsCollection.insertOne(data)
+            res.send(result)
+        })
+
+        // update fruit for item details page
         app.put('/fruit/:id', async(req, res) => {
             const fruitId = req.params.id
             const filter = {_id:ObjectId(fruitId)}
@@ -54,7 +69,7 @@ async function run (){
             res.send(result);
         })
 
-        // delete api
+        // delete for mange item page
         app.delete('/fruit/:id', async (req, res) => {
             const fruitId = req.params.id
             const filter = {_id:ObjectId(fruitId)}
